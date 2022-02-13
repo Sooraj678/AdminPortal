@@ -43,18 +43,28 @@
 				</a></li>
 
 				<li class="nav-item"><a class="nav-link"
-					href="login.jsp">Login</a></li>
+					href="">MasterList-Subjects</a></li>
+					
 				<li class="nav-item"><a class="nav-link"
-					href="register.jsp">Student-Registration</a></li>
+					href="">MasterList-Teachers</a></li>
+					
 				<li class="nav-item"><a class="nav-link"
-					href="teacherRegister.jsp">Teacher-Registration</a></li>
+					href="">MasterList-Classes</a></li>
+					
 				<li class="nav-item"><a class="nav-link"
-					href="contactUS.jsp">ContactUS</a></li>
+					href="">Assign-Classes</a></li>
+					
 				<li class="nav-item"><a class="nav-link"
-					href="aboutUS.jsp">AboutUS</a></li>
+					href="">Assign-Teachers</a></li>
+					
+				<li class="nav-item"><a class="nav-link"
+					href="aboutUS.jsp">MasterList-Students</a></li>
+					
+				<li class="nav-item"><a class="nav-link"
+					href="">ViewReport-Class</a></li>
 
 				<li class="nav-item"><a class="nav-link"
-					href="logout.jsp">Logout</a></li>
+					href="../logout.jsp">Logout</a></li>
 
 			</ul>
 			
