@@ -4,4 +4,24 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>UsersRegistrationAction</servlet-name>
+  	<display-name>UsersRegistrationAction</display-name>
+  	<description></description>
+  	<servlet-class>adminportal.controller.UsersRegistrationAction</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>TeacherRegistrationCtl</servlet-name>
+  	<display-name>TeacherRegistrationCtl</display-name>
+  	<description></description>
+  	<servlet-class>adminportal.controller.TeacherRegistrationCtl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UsersRegistrationAction</servlet-name>
+  	<url-pattern>/UsersRegistrationAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>TeacherRegistrationCtl</servlet-name>
+  	<url-pattern>/TeacherRegistrationCtl</url-pattern>
+  </servlet-mapping>
 </web-app>

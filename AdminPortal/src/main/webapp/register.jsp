@@ -1,4 +1,5 @@
 <!DOCTYPE html>  
+<%@page import="adminportal.controller.LAAPView"%>
 <html>  
 <head>  
 <meta name="viewport" content="width=device-width, initial-scale=1">  
@@ -7,12 +8,37 @@
 <link rel="stylesheet" href="css/register.css">
 </head>  
 <%@ include file="header.jsp"%> 
-<body>  
-<form>  
+<body>
+	<%
+		String msg = request.getParameter("msg");
+		if ("valid".equals(msg)) {
+	%>
+	<h1 style="color:green;">Successfully Registered</h1>
+	<%
+								}
+	%>
+
+	<%
+		if ("invalid".equals(msg)) {
+	%>
+	<h1 style="color:red;">Some thing Went Wrong! Try Again !</h1>
+
+	<%
+									}
+	%>
+
+	<form action=" <%=LAAPView.StudentRegistrationCtl%> " method="post">  
   <div class="container">  
   <center>  <h1> Student Registeration Form</h1> </center>  
   <hr> 
-  <input type="hidden" name="loginRole" placeholder= "Student"/> 
+<label>   
+Please Select Your Role:  
+</label>   
+  
+<select id="loginRole" name="loginRole">  
+<option value="role">Register as: </option>
+<option value="Student">Student</option>
+</select> <br>
   <label> Firstname </label>   
 <input type="text" name="firstname" placeholder= "Firstname" size="15" required />   
 <label> Middlename: </label>   
@@ -24,7 +50,7 @@
 Course :  
 </label>   
   
-<select>  
+<select id="course" name="course">  
 <option value="Course">Course</option>  
 <option value="BCA">BCA</option>  
 <option value="BBA">BBA</option>  
@@ -47,9 +73,9 @@ Gender :
 Phone :  
 </label>  
 <input type="text" name="country code" placeholder="Country Code"  value="+91" size="2"/>   
-<input type="text" name="phone" placeholder="phone no." size="10"/ required>   
+<input type="text" name="phone" placeholder="phone no." size="10/" required>   
 Current Address :  
-<textarea cols="80" rows="5" placeholder="Current Address" value="address" required>  
+<textarea cols="80" rows="5" name ="address" placeholder="Current Address"  required>  
 </textarea>  
  <label for="email"><b>Email</b></label>  
  <input type="text" placeholder="Enter Email" name="email" required>  

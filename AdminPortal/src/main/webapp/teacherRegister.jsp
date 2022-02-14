@@ -1,4 +1,5 @@
 <!DOCTYPE html>  
+<%@page import="adminportal.controller.LAAPView"%>
 <html>  
 <head>  
 <meta name="viewport" content="width=device-width, initial-scale=1">  
@@ -7,13 +8,35 @@
 <link rel="stylesheet" href="css/register.css">
 </head>  
 <%@ include file="header.jsp"%> 
-<body>  
-<form>  
+<body> 
+<%
+		String msg = request.getParameter("msg");
+		if ("valid".equals(msg)) {
+	%>
+	<h1 style="color:green;">Successfully Registered as a Teacher</h1>
+	<%
+								}
+	%>
+
+	<%
+		if ("invalid".equals(msg)) {
+	%>
+	<h1 style="color:red;">Some thing Went Wrong! Try Again !</h1>
+
+	<%
+									}
+	%>
+ 
+<form action=" <%=LAAPView.TeacherRegistrationCtl%>" method="post">  
   <div class="container">  
   <center>  <h1> Teacher Registeration Form</h1> </center>  
   <hr>
+  <label> Please Register as: </label>
+ <select id="loginRole" name="loginRole">  
+<option value="role">Register as: </option>
+<option value="Teacher">Teacher</option>
+</select> <br>
   
-<input type="hidden" name="loginRole" placeholder= "Teacher"/>   
   <label> Firstname </label>   
 <input type="text" name="firstname" placeholder= "Firstname" size="15" required />   
 <label> Middlename: </label>   
@@ -25,7 +48,7 @@
 Please Select Your Qualification:  
 </label>   
   
-<select>  
+<select id="qualification" name="qualification">  
 <option value="qualification">Qualification</option>  
 <option value="BCA">BCA</option>  
 <option value="BBA">BBA</option>  
@@ -53,10 +76,10 @@ Please Select Your Gender :
 Please Enter Your Phone Number:  
 </label>  
 <input type="text" name="country code" placeholder="Country Code"  value="+91" size="2"/>   
-<input type="text" name="phone" placeholder="Phone no." size="10"/ required>   
+<input type="text" name="phone" placeholder="Phone no." size="10" required>   
 Your Current Address :  
-<textarea cols="80" rows="5" placeholder="Current Address" value="address" required>  
-</textarea>  
+<textarea cols="80" rows="5" name="address" placeholder="Current Address"  required>  
+</textarea> 
  
  <label for="email"><b>Your Email</b></label>  
  <input type="text" placeholder="Enter Email" name="email" required>  
