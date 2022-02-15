@@ -8,7 +8,28 @@
 <link rel="stylesheet" href="../css/Login.css">
 <link rel="stylesheet" href="css/login.css">  
 </head>    
-<body>    
+<body>
+
+	<%
+	String msg = request.getParameter("msg");
+	System.out.println("Coming Response Parameter is:"+msg);
+		if ("invalid".equals(msg)) {
+	%>
+	<h1 style="color:red;">Some thing Went Wrong! Please Try Again to LOGIN !</h1>
+
+	<%
+									}
+	%>
+	
+	<%   
+	if ("notExist".equals(msg)) {
+	%>
+	<h1 style="color:red;">Some thing Went Wrong! User Does Not Exist..! Please register first..</h1>
+
+	<%
+									}
+	%>     
+
     <center> <h1> Login Form </h1> </center>   
     <form action="<%=LAAPView.LoginCtl %>" method="post">  
         <div class="container">   

@@ -9,6 +9,14 @@
 
 <%@ include file="studentHeader.jsp"%>
 <body>
+<%
+		String msg = request.getParameter("msg");
+		if ("valid".equals(msg)) {
+	%>
+	<h1 style="color:green;">Successfully Logined: into Student Portal Page</h1>
+	<%
+								}
+	%>
 <h1 style="color: red;"> Welcome @ Dear Student to the Student Portal </h1>
 </body>
 <%@ include file="footer.jsp"%>

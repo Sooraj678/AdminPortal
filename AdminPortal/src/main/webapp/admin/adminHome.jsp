@@ -9,6 +9,16 @@
 <%@ include file="../admin/adminHeader.jsp"%>
 
 <body>
+	<%
+		String msg = request.getParameter("msg");
+		if ("valid".equals(msg)) {
+	%>
+	<h1 style="color:green;">Successfully Logined: Into Admin Page</h1>
+	<%
+								}
+	%>
+
+
 <h1 style="color: red;"> Welcome @ Admin to the Admin Portal </h1>
 </body>
 
