@@ -41,13 +41,10 @@
 				<li class="nav-item active"><a class="nav-link"
 					href="home.jsp">Home <span class="sr-only">(current)</span>
 				</a></li>
-
+				
 				<li class="nav-item"><a class="nav-link"
-					href="login.jsp">Login</a></li>
-				<li class="nav-item"><a class="nav-link"
-					href="register.jsp">Student-Registration</a></li>
-				<li class="nav-item"><a class="nav-link"
-					href="teacherRegister.jsp">Teacher-Registration</a></li>
+					href="">View-YourSchedule</a></li>
+				
 				<li class="nav-item"><a class="nav-link"
 					href="contactUS.jsp">ContactUS</a></li>
 				<li class="nav-item"><a class="nav-link"

@@ -8,7 +8,7 @@ public class DbConnectionProvider {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/adminportal-phase2", "root",
 					"root");
-			System.out.println("Connection Object is:" + con);
+			//System.out.println("Connection Object is:" + con);
 			return con;
 		} catch (Exception e) {
 			System.out.println(e);

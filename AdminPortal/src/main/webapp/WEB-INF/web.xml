@@ -16,6 +16,12 @@
   	<description></description>
   	<servlet-class>adminportal.controller.TeacherRegistrationCtl</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>LoginCtl</servlet-name>
+  	<display-name>LoginCtl</display-name>
+  	<description></description>
+  	<servlet-class>adminportal.controller.LoginCtl</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>UsersRegistrationAction</servlet-name>
   	<url-pattern>/UsersRegistrationAction</url-pattern>
@@ -23,5 +29,9 @@
   <servlet-mapping>
   	<servlet-name>TeacherRegistrationCtl</servlet-name>
   	<url-pattern>/TeacherRegistrationCtl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>LoginCtl</servlet-name>
+  	<url-pattern>/LoginCtl</url-pattern>
   </servlet-mapping>
 </web-app>

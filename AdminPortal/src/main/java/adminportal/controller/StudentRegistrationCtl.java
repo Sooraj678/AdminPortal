@@ -61,7 +61,7 @@ public class StudentRegistrationCtl extends HttpServlet {
 			long flag = UsersModel.addUsers(user);
 			
 			if ( flag>0) {
-				System.out.println("Data inseretd Successfully: into Users Table");
+				System.out.println("Data inseretd Successfully: into usersadminportal Table");
 				//response.sendRedirect(OSMView.signupView+"?msg=valid");
 				response.sendRedirect("register.jsp?msg=valid");
 			}

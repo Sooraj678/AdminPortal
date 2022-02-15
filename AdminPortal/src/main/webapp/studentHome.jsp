@@ -4,13 +4,12 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>AdminHomePage</title>
+<title>Student Home-Page</title>
 </head>
-<%@ include file="../admin/adminHeader.jsp"%>
 
+<%@ include file="studentHeader.jsp"%>
 <body>
-<h1 style="color: red;"> Welcome @ Admin to the Admin Portal </h1>
+<h1 style="color: red;"> Welcome @ Dear Student to the Student Portal </h1>
 </body>
-
-<%@ include file="../footer.jsp"%>
+<%@ include file="footer.jsp"%>
 </html>
