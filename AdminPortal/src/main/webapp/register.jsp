@@ -99,7 +99,8 @@ Current Address :
 	
 	<input type="text" name="answer" placeholder="Enter Your Answer" required>
      
-    <button type="submit" class="registerbtn">Register</button>    
+    <button type="submit" class="registerbtn">Register</button>  
+    </div>  
 </form>  
 </body>  
    <div style="margin-top: 120px">

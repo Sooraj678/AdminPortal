@@ -10,6 +10,8 @@ public interface LAAPView {
 	public String StudentRegistrationCtl =App_CONTEXT+"/StudentRegistrationCtl";
 	public String TeacherRegistrationCtl =App_CONTEXT+"/TeacherRegistrationCtl";
 	public String LoginCtl =App_CONTEXT+"/LoginCtl";
-	
+	public String UpdateStudentCtl =App_CONTEXT+"/UpdateStudentCtl";
+	public String UpdateTeacherCtl =App_CONTEXT+"/UpdateTeacherCtl";
+	public String DeleteCtl =App_CONTEXT+"/DeleteCtl";
 	
 }

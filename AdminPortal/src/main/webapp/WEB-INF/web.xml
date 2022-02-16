@@ -22,6 +22,24 @@
   	<description></description>
   	<servlet-class>adminportal.controller.LoginCtl</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>UpdateStudentCtl</servlet-name>
+  	<display-name>UpdateStudentCtl</display-name>
+  	<description></description>
+  	<servlet-class>adminportal.controller.UpdateStudentCtl</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UpdateTeacherCtl</servlet-name>
+  	<display-name>UpdateTeacherCtl</display-name>
+  	<description></description>
+  	<servlet-class>adminportal.controller.UpdateTeacherCtl</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DeleteCtl</servlet-name>
+  	<display-name>DeleteCtl</display-name>
+  	<description></description>
+  	<servlet-class>adminportal.controller.DeleteCtl</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>UsersRegistrationAction</servlet-name>
   	<url-pattern>/UsersRegistrationAction</url-pattern>
@@ -33,5 +51,17 @@
   <servlet-mapping>
   	<servlet-name>LoginCtl</servlet-name>
   	<url-pattern>/LoginCtl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UpdateStudentCtl</servlet-name>
+  	<url-pattern>/UpdateStudentCtl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UpdateTeacherCtl</servlet-name>
+  	<url-pattern>/UpdateTeacherCtl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteCtl</servlet-name>
+  	<url-pattern>/DeleteCtl</url-pattern>
   </servlet-mapping>
 </web-app>

@@ -1,3 +1,4 @@
+<%@page import="adminportal.controller.LAAPView"%>
 <%@page import="adminportal.model.DbConnectionProvider"%>
 <%@page import="java.sql.*"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
@@ -15,6 +16,49 @@
 <%@ include file="../admin/adminHeader.jsp"%>
 
 <body>
+
+<%
+		String msg = request.getParameter("msg");
+		if ("done".equals(msg)) {
+%>
+	<h1 style="color:green;">Data Updated Successfully: For Student</h1>
+	
+	<%
+								}
+	%>
+	
+	<%
+	if ("wrong".equals(msg)) {
+	%>
+	
+	<h1 style="color:red;">Some Problem is there , Requested Operation is not Completed:Please try Again</h1>
+	
+	<%
+								}
+	%>
+	
+	<%
+	if ("Done".equals(msg)) {
+	%>
+	
+	<h1 style="color:blue;">Data Updated Successfully: For Teacher</h1>
+	
+	<%
+								}
+	%>
+	
+	<%
+	if ("deleteOpDone".equals(msg)) {
+	%>
+	
+	<h1 style="color:red;">Data Deleted Successfully .....!!!</h1>
+	
+	<%
+								}
+	%>
+	
+
+
 <h1 style="color: Red"> Welcome @ADMIN to the Page on which ADMIN will be able to see complete Registered Data</h1>
 
 <table id="allRegisteredData">
@@ -70,10 +114,22 @@
 			<td><%=rs.getString(15)%></td>
 			<td><%=rs.getString(16)%></td>
 			<!-- Giving a edit option to User so that they can edit the user -->
-			<td><a href="">Edit</a></td>
+			<% String loginRole = rs.getString(2);
+			if("Student".equals(loginRole)){		
+			
+			%>
+			<td><a href="updateRegisterStudent.jsp?id=<%=rs.getString(1)%>">Update-StudentData</a></td>
+			<%     } else if ("Teacher".equals(loginRole)) {%>
+			
+			<td><a href="updateRegisterTeacher.jsp?id=<%=rs.getString(1)%>">Update-TeacherData</a></td>
+			
+			<% }%>
+			
 			<!-- Giving a Delete option to User so that they can delete the specific user's record based on got id from
 			View Part only -->
-			<td><a href="">Delete</a></td>
+			
+			<td><a href="<%=LAAPView.DeleteCtl %>?id=<%=rs.getString(1)%>">Delete-CompleteData</a></td>
+			
 			<td><a href="">Add</a></td>	
 		</tr>
 		<% 					}
