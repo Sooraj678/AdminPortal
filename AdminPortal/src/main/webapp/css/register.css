@@ -5,7 +5,7 @@ body{
 }  
 .container {  
     padding: 50px;  
-  background-color: lightblue;  
+  background-color: lightblue;
 }  
   
 input[type=text], input[type=password], textarea {  

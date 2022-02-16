@@ -39,7 +39,8 @@ Please Select Your Role:
 <option value="role">Register as: </option>
 <option value="Student">Student</option>
 </select> <br>
-  <label> Firstname </label>   
+
+<label> Firstname </label>   
 <input type="text" name="firstname" placeholder= "Firstname" size="15" required />   
 <label> Middlename: </label>   
 <input type="text" name="middlename" placeholder="Middlename" size="15" required />   

@@ -40,6 +40,18 @@
   	<description></description>
   	<servlet-class>adminportal.controller.DeleteCtl</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>AddSubjectsCtl</servlet-name>
+  	<display-name>AddSubjectsCtl</display-name>
+  	<description></description>
+  	<servlet-class>adminportal.controller.AddSubjectsCtl</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DeleteSubjectCtl</servlet-name>
+  	<display-name>DeleteSubjectCtl</display-name>
+  	<description></description>
+  	<servlet-class>adminportal.controller.DeleteSubjectCtl</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>UsersRegistrationAction</servlet-name>
   	<url-pattern>/UsersRegistrationAction</url-pattern>
@@ -63,5 +75,13 @@
   <servlet-mapping>
   	<servlet-name>DeleteCtl</servlet-name>
   	<url-pattern>/DeleteCtl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AddSubjectsCtl</servlet-name>
+  	<url-pattern>/AddSubjectsCtl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteSubjectCtl</servlet-name>
+  	<url-pattern>/DeleteSubjectCtl</url-pattern>
   </servlet-mapping>
 </web-app>

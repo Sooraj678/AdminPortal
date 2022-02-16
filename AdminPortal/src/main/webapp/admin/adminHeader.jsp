@@ -43,28 +43,17 @@
 				</a></li>
 
 				<li class="nav-item"><a class="nav-link"
-					href="viewRegisteredData.jsp">All-RegisteredData</a></li>
+					href="viewRegisteredData.jsp">Get-RegisteredData</a></li>
 				
 				<li class="nav-item"><a class="nav-link"
-					href="">MasterList-Subjects</a></li>
+					href="setUpSubjectsForClassesView.jsp">SetUp-SubjectsForClasses</a></li>
 					
 				<li class="nav-item"><a class="nav-link"
-					href="">MasterList-Teachers</a></li>
+					href="">SetUp-TeachersList</a></li>
 					
 				<li class="nav-item"><a class="nav-link"
-					href="">MasterList-Classes</a></li>
+					href="">SetUp-ClassesList</a></li>
 					
-				<li class="nav-item"><a class="nav-link"
-					href="">Assign-Classes</a></li>
-					
-				<li class="nav-item"><a class="nav-link"
-					href="">Assign-Teachers</a></li>
-					
-				<li class="nav-item"><a class="nav-link"
-					href="aboutUS.jsp">MasterList-Students</a></li>
-					
-				<li class="nav-item"><a class="nav-link"
-					href="">ViewReport-Class</a></li>
 
 				<li class="nav-item"><a class="nav-link"
 					href="../logout.jsp">Logout</a></li>
