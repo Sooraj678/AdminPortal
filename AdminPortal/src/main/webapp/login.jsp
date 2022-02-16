@@ -31,7 +31,7 @@
 	%>     
 
     <center> <h1> Login Form </h1> </center>   
-    <form action="<%=LAAPView.LoginCtl %>" method="post">  
+    <form action="<%=LAAPView.LoginCtl%>" method="post">  
         <div class="container">   
             <label><b>Username : </b></label> <br>  
             <input type="text" placeholder="Your E-Mail as Username" name="username" required>  

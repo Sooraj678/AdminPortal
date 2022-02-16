@@ -43,6 +43,9 @@
 				</a></li>
 
 				<li class="nav-item"><a class="nav-link"
+					href="viewRegisteredData.jsp">All-RegisteredData</a></li>
+				
+				<li class="nav-item"><a class="nav-link"
 					href="">MasterList-Subjects</a></li>
 					
 				<li class="nav-item"><a class="nav-link"
