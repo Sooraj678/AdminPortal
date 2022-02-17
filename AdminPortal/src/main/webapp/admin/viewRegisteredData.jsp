@@ -65,24 +65,23 @@
 		
 		<tr>
 			<th scope="col">Id</th>
-			<th scope="col">loginRole</th>
-			<th scope="col">firstName</th>
-			<th scope="col">middleName</th>
-			<th scope="col">lastName</th> 
-			<th scope="col">course</th>
-			<th scope="col">gender</th>
-			<th scope="col">phoneNo</th>
-			<th scope="col">currentAddress</th>
-			<th scope="col">email</th>
-			<th scope="col">password</th>
-			<th scope="col">retypedPassword</th>
-			<th scope="col">securityQuestions</th>
-			<th scope="col">answer</th>
-			<th scope="col">qualification</th>
-			<th scope="col">salaryExpectation</th>
-			<th scope="col">editAction <i class='fas fa-pen-fancy'></i></th>
-			<th scope="col">deleteAction</th>
-			<th scope="col">addAction</th>
+			<th scope="col">Role</th>
+			<th scope="col">F-Name</th>
+			<th scope="col">M-Name</th>
+			<th scope="col">L-Name</th> 
+			<th scope="col">Course</th>
+			<th scope="col">Gender</th>
+			<th scope="col">Phone</th>
+			<th scope="col">Address</th>
+			<th scope="col">Email</th>
+			<th scope="col">Pwd</th>
+			<th scope="col">R-Pwd</th>
+			<th scope="col">S-Question</th>
+			<th scope="col">Ans</th>
+			<th scope="col">Qualification</th>
+			<th scope="col">Salary</th>
+			<th scope="col">Edit</th>
+			<th scope="col">Delete</th>
 		</tr>
 		
 
@@ -129,10 +128,10 @@
 			View Part only -->
 			
 			<td><a href="<%=LAAPView.DeleteCtl %>?id=<%=rs.getString(1)%>">Delete-CompleteData</a></td>
-			
-			<td><a href="">Add</a></td>	
+	
 		</tr>
 		<% 					}
+       			
        			 }catch(Exception e){
        				System.out.println(e); 
        			 }  			 

@@ -16,7 +16,7 @@
 <%
 		String msg = request.getParameter("msg");
 		if ("deleteOpDone".equals(msg)) {
-	%>
+%>
 	<h1 style="color:green;">Delete Operation is done for Subjects-MasterList: </h1>
 	<%
 								}
@@ -29,14 +29,28 @@
 	<%
 								}
 	%>
+<%
+		if ("updateDone".equals(msg)) {
+%>
+	<h1 style="color:green;">Update Operation is done for Subjects-MasterList: </h1>
+	<%
+								}
+	%>
 	
+	<%
+	if ("updateWrong".equals(msg)) {
+	%>
+	<h1 style="color:red;">Some Problem Occurrs during Updation: Please try again...!!!! </h1>
+	<%
+								}
+	%>
 <table id="allRegisteredData">
 		<tr>
 			<th scope="col">idSubject</th>
 			<th scope="col">subjectName</th>
 			<th scope="col">className</th>
-			<th scope="col">deleteAction</th>
 			<th scope="col">updateAction</th>
+			<th scope="col">deleteAction</th>
 		</tr>
 		<%
        		try{
@@ -52,10 +66,11 @@
 			<td><%=rs.getString(1)%></td>
 			<td><%=rs.getString(2)%></td>
 			<td><%=rs.getString(3)%></td>
-			<td><a href="">updateSubjects</a></td>
+			<td><a href="updateStudentListView.jsp?idSubject=<%=rs.getString(1)%>">updateSubjects</a></td>
 			<td><a href="<%=LAAPView.DeleteSubjectCtl %>?idSubject=<%=rs.getString(1)%>">deleteSubjects</a></td>			
 		</tr>
 		<% 					}
+       			
        			 }catch(Exception e){
        				System.out.println(e); 
        			 }  			 

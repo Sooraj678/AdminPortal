@@ -83,6 +83,7 @@ value="<%= rs.getString(8)%>" required>
 </form>
 <% 						
 						}
+		
 	}
 	catch(Exception e){
 		System.out.println(e);

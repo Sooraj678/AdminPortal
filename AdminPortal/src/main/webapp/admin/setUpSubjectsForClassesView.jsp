@@ -23,7 +23,7 @@
 	%>
 
 <div class="container">
-<form action=" <%= LAAPView.AddSubjectsCtl%> " method="post">
+<form action=" <%=LAAPView.AddSubjectsCtl%> " method="post">
  	<div>  
 		<label>   
 			<b>Please Select Course: --!!!! </b>
@@ -48,12 +48,14 @@
 <div>
 <%
 		if ("valid".equals(msg)) {
-	%>
+%>
 	<h1 style="color:green;">Successfully Data Inserted into Subjects Table:</h1>
-	<div><center><h1> <b>Show</b> <a href="showMasterListOfSubjects.jsp"> <b>Subjects-MasterList-ForTheClasses</b> </a> </h1></center> </div>
+	
 	<%
 								}
 	%>
+<div><center><h1> <b>Show</b> <a href="showMasterListOfSubjects.jsp"> 
+<b>Subjects-MasterList-ForTheClasses</b> </a> </h1></center> </div>
 </div>
 </body>
 <div>
