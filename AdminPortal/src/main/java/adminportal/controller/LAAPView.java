@@ -16,6 +16,11 @@ public interface LAAPView {
 	public String AddSubjectsCtl =App_CONTEXT+"/AddSubjectsCtl";
 	public String DeleteSubjectCtl =App_CONTEXT+"/DeleteSubjectCtl";
 	public String UpdateStudentListCtl =App_CONTEXT+"/UpdateStudentListCtl";
+	public String AddTeacherCtl =App_CONTEXT+"/AddTeacherCtl";
+	public String DeleteTeacherCtl =App_CONTEXT+"/DeleteTeacherCtl";
+	public String UpdateTeacherListCtl =App_CONTEXT+"/UpdateTeacherListCtl";
+	
+	
 	
 	
 	

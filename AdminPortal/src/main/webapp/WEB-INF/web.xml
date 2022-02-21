@@ -58,6 +58,24 @@
   	<description></description>
   	<servlet-class>adminportal.controller.UpdateStudentListCtl</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>AddTeacherCtl</servlet-name>
+  	<display-name>AddTeacherCtl</display-name>
+  	<description></description>
+  	<servlet-class>adminportal.controller.AddTeacherCtl</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DeleteTeacherCtl</servlet-name>
+  	<display-name>DeleteTeacherCtl</display-name>
+  	<description></description>
+  	<servlet-class>adminportal.controller.DeleteTeacherCtl</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UpdateTeacherListCtl</servlet-name>
+  	<display-name>UpdateTeacherListCtl</display-name>
+  	<description></description>
+  	<servlet-class>adminportal.controller.UpdateTeacherListCtl</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>UsersRegistrationAction</servlet-name>
   	<url-pattern>/UsersRegistrationAction</url-pattern>
@@ -93,5 +111,17 @@
   <servlet-mapping>
   	<servlet-name>UpdateStudentListCtl</servlet-name>
   	<url-pattern>/UpdateStudentListCtl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AddTeacherCtl</servlet-name>
+  	<url-pattern>/AddTeacherCtl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteTeacherCtl</servlet-name>
+  	<url-pattern>/DeleteTeacherCtl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UpdateTeacherListCtl</servlet-name>
+  	<url-pattern>/UpdateTeacherListCtl</url-pattern>
   </servlet-mapping>
 </web-app>

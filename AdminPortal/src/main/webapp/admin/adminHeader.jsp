@@ -46,10 +46,10 @@
 					href="viewRegisteredData.jsp">Get-RegisteredData</a></li>
 				
 				<li class="nav-item"><a class="nav-link"
-					href="setUpSubjectsForClassesView.jsp">SetUp-SubjectsForClasses</a></li>
+					href="MaterListForSubjectsView.jsp">SetUp-SubjectsForClasses</a></li>
 					
 				<li class="nav-item"><a class="nav-link"
-					href="">SetUp-TeachersList</a></li>
+					href="MasterListForTeachersView.jsp">SetUp-TeachersList</a></li>
 					
 				<li class="nav-item"><a class="nav-link"
 					href="">SetUp-ClassesList</a></li>

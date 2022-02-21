@@ -55,8 +55,8 @@
 	}
 %>
 </div>
-<div>
-</div>
+<div><center><h1> <b>Show</b> <a href="showMasterListOfSubjects.jsp"> 
+<b>Subjects-MasterList-ForTheClasses</b> </a> </h1></center> </div>
 </body>
 <div style="margin-top: 120px">
     <%@ include file="../footer.jsp"%>

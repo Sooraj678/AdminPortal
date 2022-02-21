@@ -8,56 +8,54 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import adminportal.beans.AddSubjectBeans;
+import adminportal.beans.AddTeacherBeans;
 import adminportal.model.AddSubjectModel;
-import adminportal.model.UsersModel;
+import adminportal.model.AddTeacherModel;
 
 /**
- * Servlet implementation class AddSubjectsCtl
+ * Servlet implementation class AddTeacherCtl
  */
-@WebServlet(name = "AddSubjectsCtl", urlPatterns = { "/AddSubjectsCtl" })
-public class AddSubjectsCtl extends HttpServlet {
+
+@WebServlet(name = "AddTeacherCtl", urlPatterns = { "/AddTeacherCtl" })
+public class AddTeacherCtl extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public AddSubjectsCtl() {
+
+    public AddTeacherCtl() {
         super();
         // TODO Auto-generated constructor stub
     }
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
+
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
+
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
-		AddSubjectBeans data = new AddSubjectBeans();
+		doGet(request, response);
+		AddTeacherBeans data = new AddTeacherBeans();
 		
-		data.setSubjectName((request.getParameter("subjectName")));
-		data.setClassName((request.getParameter("course")));
+		data.setTeacherName((request.getParameter("teacherName")));
+		data.setQualification((request.getParameter("qualification")));
+		data.setSpecializedSubject((request.getParameter("subjectName")));
 		
-		long flag = AddSubjectModel.addSubjectsList(data);
+		long flag = AddTeacherModel.addTeachersList(data);
 		if ( flag>0) {
-			System.out.println("Subjects List to respective classes inseretd Successfully: into subjects Table");
+			System.out.println("Teacher's Master List Data is inseretd Successfully: into teachers Table");
 			//response.sendRedirect(OSMView.signupView+"?msg=valid");
-			response.sendRedirect("admin/MaterListForSubjectsView.jsp?msg=valid");
+			response.sendRedirect("admin/MasterListForTeachersView.jsp?msg=valid");
 		}
 		else {
 			System.out.println("Some Problem Occurs during Insertion of Data:");
-			response.sendRedirect("admin/MaterListForSubjectsView.jsp?msg=invalid");
+			response.sendRedirect("admin/MasterListForTeachersView.jsp?msg=invalid");
 			//response.sendRedirect(OSMView.signupView+"?msg=invalid");
 		}
 		
 		
 	}
+		
 
 }

@@ -39,7 +39,7 @@
 			</select>  
 	</div>
 
-<label>Enter Subject's Name for selected Course: to create Master List for Subjects ----!! </label>    
+<label><b>Enter Subject's Name for selected Course: to create Master List for Subjects ----!!</b></label>    
 <input type="text" name="subjectName" placeholder="Enter Subject's Name....!!!"  required />
 
 <button type="submit" class="registerbtn">AddSubjects-MasterList</button>
