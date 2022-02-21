@@ -52,7 +52,7 @@
 					href="MasterListForTeachersView.jsp">SetUp-TeachersList</a></li>
 					
 				<li class="nav-item"><a class="nav-link"
-					href="">SetUp-ClassesList</a></li>
+					href="MasterListForClassesView.jsp">SetUp-ClassesList</a></li>
 					
 
 				<li class="nav-item"><a class="nav-link"

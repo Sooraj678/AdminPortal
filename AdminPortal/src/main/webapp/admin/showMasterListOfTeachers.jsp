@@ -79,6 +79,8 @@
 	 %>
 	
 </table>
+<div style="margin-top: 300px"><center><h3> <b>GoTo Add Page For..!!!</b> <a href="MasterListForTeachersView.jsp"> 
+<b>Teachers-MasterList</b> </a> </h3></center> </div>
 </body>
 <div style="margin-top: 120px">
     <%@ include file="../footer.jsp"%>

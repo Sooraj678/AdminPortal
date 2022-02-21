@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>SubjectsPage-MasterList</title>
+<title>ClassPage-MasterList</title>
 <link rel="stylesheet" href="../css/viewRegisteredDataCSS.css">
 <link rel="stylesheet" href="css/viewRegisteredDataCSS.css">
 </head>
@@ -17,7 +17,7 @@
 		String msg = request.getParameter("msg");
 		if ("deleteOpDone".equals(msg)) {
 %>
-	<h1 style="color:green;">Delete Operation is done for Subjects-MasterList: </h1>
+	<h1 style="color:green;">Delete Operation is done for Classes-MasterList: </h1>
 	<%
 								}
 	%>
@@ -32,7 +32,7 @@
 <%
 		if ("updateDone".equals(msg)) {
 %>
-	<h1 style="color:green;">Update Operation is done for Subjects-MasterList: </h1>
+	<h1 style="color:green;">Update Operation is done for Class-MasterList: </h1>
 	<%
 								}
 	%>
@@ -46,9 +46,9 @@
 	%>
 <table id="allRegisteredData">
 		<tr>
-			<th scope="col">idSubject</th>
-			<th scope="col">subjectName</th>
-			<th scope="col">className</th>
+			<th scope="col">idClass</th>
+			<th scope="col">ClassName</th>
+			<th scope="col">SubjectForClass</th>
 			<th scope="col">updateAction</th>
 			<th scope="col">deleteAction</th>
 		</tr>
@@ -57,7 +57,7 @@
        			
        			Connection con = DbConnectionProvider.getCon();
        			Statement stmt = con.createStatement();
-       			ResultSet rs = stmt.executeQuery("select *from subjects");
+       			ResultSet rs = stmt.executeQuery("select *from classes");
        			 while(rs.next()){
        				 
        %>
@@ -66,8 +66,8 @@
 			<td><%=rs.getString(1)%></td>
 			<td><%=rs.getString(2)%></td>
 			<td><%=rs.getString(3)%></td>
-			<td><a href="updateStudentListView.jsp?idSubject=<%=rs.getString(1)%>">updateSubjects</a></td>
-			<td><a href="<%=LAAPView.DeleteSubjectCtl %>?idSubject=<%=rs.getString(1)%>">deleteSubjects</a></td>			
+			<td><a href="updateClassListView.jsp?idClass=<%=rs.getString(1)%>">updateClassList</a></td>
+			<td><a href="<%=LAAPView.DeleteClassCtl %>?idClass=<%=rs.getString(1)%>">deleteClassList</a></td>			
 		</tr>
 		<% 					}
        			
@@ -77,8 +77,8 @@
 	 %>
 	
 </table>
-<div style="margin-top: 300px"><center><h3> <b>GoTo Add Page For..!!!</b> <a href="MaterListForSubjectsView.jsp"> 
-<b>Subjects-MasterList</b> </a> </h3></center> </div>
+<div style="margin-top: 300px"><center><h3> <b>GoTo Add Page For..!!!</b> <a href="MasterListForClassesView.jsp"> 
+<b>Classes-MasterListWithSubjects</b> </a> </h3></center> </div>
 </body>
 <div style="margin-top: 120px">
     <%@ include file="../footer.jsp"%>
