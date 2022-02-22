@@ -54,6 +54,9 @@
 				<li class="nav-item"><a class="nav-link"
 					href="MasterListForClassesView.jsp">SetUp-ClassesList</a></li>
 					
+				<li class="nav-item"><a class="nav-link"
+					href="assignClassesAndTeacherView.jsp">AssignClasses-AndTeacher</a></li>
+					
 
 				<li class="nav-item"><a class="nav-link"
 					href="../logout.jsp">Logout</a></li>
