@@ -17,69 +17,7 @@
 <body>
 
 <table id="allRegisteredData">
-<div ><center><h3 style="color:red;"> <b>Available Classes List is..!!!</b></h3></center> </div>
-		<tr>
-			<th scope="col">AvailableClassName</th>
-			<th scope="col">idSubject</th>
-			<th scope="col">SubjectsForClass</th>
-		</tr>
-		<%
-       		try{
-       			
-       			Connection con = DbConnectionProvider.getCon();
-       			Statement stmt = con.createStatement();
-       			ResultSet rs = stmt.executeQuery("select *from subjects");
-       			
-       			 while(rs.next()){
-       				 
-       %>
-		
-		<tr>
-			<td><%=rs.getString(3)%></td>
-			<td><%=rs.getString(1)%></td>
-			<td><%=rs.getString(2)%></td>		
-		</tr>
-		<% 					}
-       			
-       			 }catch(Exception e){
-       				System.out.println(e); 
-       			 }  			 
-	 %>	 	
-</table>
-<table id="allRegisteredData">
-<div ><center><h3 style="color: blue;"> <b>Available Teachers List is..!!!</b></h3></center> </div>
-		<tr>
-			<th scope="col">IdTeacher</th>
-			<th scope="col">TeacherName</th>
-			<th scope="col">Qualification</th>
-			<th scope="col">Teachers-SpecializedSubject</th>
-		</tr>	
-		
-		<%	    try{
-       			Connection con = DbConnectionProvider.getCon();
-       			Statement stmt = con.createStatement();
-       			ResultSet rs1 = stmt.executeQuery("select *from teachers");
-       			 while(rs1.next()){
-       				 
-       %>
-		
-		<tr>
-			<td><%=rs1.getString(1)%></td>
-			<td><%=rs1.getString(2)%></td>
-			<td><%=rs1.getString(3)%></td>
-			<td><%=rs1.getString(4)%></td>
-			
-		</tr>
-		<% 					}
-       			
-       			 }catch(Exception e){
-       				System.out.println(e); 
-       			 }  			 
-	 	%>	
-
-</table>
-<table id="allRegisteredData">
-<div ><center><h3 style="color:red;"> <b>Registered Students List is..!!!</b></h3></center> </div>
+<div ><center><h3 style="color:green;"> <b>Registered Students List is..!!!</b></h3></center> </div>
 		
 		<tr>
 			<th scope="col">Id</th>
@@ -96,6 +34,7 @@
 			<th scope="col">R-Pwd</th>
 			<th scope="col">S-Question</th>
 			<th scope="col">Ans</th>
+			<th scope="col">AssignStudent-Action</th>
 			
 		</tr>
 		
@@ -125,6 +64,7 @@
 			<td><%=rs.getString(12)%></td>
 			<td><%=rs.getString(13)%></td>
 			<td><%=rs.getString(14)%></td>
+			<td><a href="assignClassesActionView.jsp?idStudent=<%=rs.getString(1)%>">AssignStudent-Action</a></td>
 		</tr>
 		<% 					}
        			
@@ -134,7 +74,72 @@
 	 	%>	
 
 </table>
-<div style="margin-top:130px"><button type="submit" class="registerbtn"><h3 style="color:blue;">AssignClasses-Action</h3></button></div>
+<table id="allRegisteredData">
+<div ><center><h3 style="color:red;"> <b>Available Classes List is..!!!</b></h3></center> </div>
+		<tr>
+			<th scope="col">AvailableClassName</th>
+			<th scope="col">idSubject</th>
+			<th scope="col">SubjectsForClass</th>
+			<th scope="col">AssignClasses-Action</th>
+		</tr>
+		<%
+       		try{
+       			
+       			Connection con = DbConnectionProvider.getCon();
+       			Statement stmt = con.createStatement();
+       			ResultSet rs = stmt.executeQuery("select *from subjects");
+       			
+       			 while(rs.next()){
+       				 
+       %>
+		
+		<tr>
+			<td><%=rs.getString(3)%></td>
+			<td><%=rs.getString(1)%></td>
+			<td><%=rs.getString(2)%></td>
+			<td><a href="assignClassesActionView.jsp?idSubject=<%=rs.getString(1)%>">AssignClasses-Action</a></td>		
+		</tr>
+		<% 					}
+       			
+       			 }catch(Exception e){
+       				System.out.println(e); 
+       			 }  			 
+	 %>	 	
+</table>
+<table id="allRegisteredData">
+<div ><center><h3 style="color: blue;"> <b>Available Teachers List is..!!!</b></h3></center> </div>
+		<tr>
+			<th scope="col">IdTeacher</th>
+			<th scope="col">TeacherName</th>
+			<th scope="col">Qualification</th>
+			<th scope="col">Teachers-SpecializedSubject</th>
+			<th scope="col">AssignTeacher-Action</th>
+		</tr>	
+		
+		<%	    try{
+       			Connection con = DbConnectionProvider.getCon();
+       			Statement stmt = con.createStatement();
+       			ResultSet rs1 = stmt.executeQuery("select *from teachers");
+       			 while(rs1.next()){
+       				 
+       %>
+		
+		<tr>
+			<td><%=rs1.getString(1)%></td>
+			<td><%=rs1.getString(2)%></td>
+			<td><%=rs1.getString(3)%></td>
+			<td><%=rs1.getString(4)%></td>
+			<td><a href="assignClassesActionView.jsp?idTeacher=<%=rs1.getString(1)%>">AssignTeacher-Action</a></td>
+			
+		</tr>
+		<% 					}
+       			
+       			 }catch(Exception e){
+       				System.out.println(e); 
+       			 }  			 
+	 	%>	
+
+</table>
 </body>
 <div style="margin-top: 120px">
     <%@ include file="../footer.jsp"%>

@@ -55,7 +55,7 @@
 					href="MasterListForClassesView.jsp">SetUp-ClassesList</a></li>
 					
 				<li class="nav-item"><a class="nav-link"
-					href="assignClassesAndTeacherView.jsp">AssignClasses-AndTeacher</a></li>
+					href="assignClassesAndTeacherView.jsp">AssignAction-ForClasses</a></li>
 					
 
 				<li class="nav-item"><a class="nav-link"
