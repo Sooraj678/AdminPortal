@@ -134,7 +134,7 @@
 	 	%>	
 
 </table>
-<div style="margin-top: 130px"><button type="submit" class="registerbtn"><h3 style="color:blue;">AssignClasses-Action</h3></button></div>
+<div style="margin-top:130px"><button type="submit" class="registerbtn"><h3 style="color:blue;">AssignClasses-Action</h3></button></div>
 </body>
 <div style="margin-top: 120px">
     <%@ include file="../footer.jsp"%>
