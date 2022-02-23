@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>AssignClass-ViewPage</title>
+<title>AssignActionClass-ViewPage</title>
 <link rel="stylesheet" href="../css/viewRegisteredDataCSS.css">
 <link rel="stylesheet" href="css/viewRegisteredDataCSS.css">
 <link rel="stylesheet" href="../css/register.css">

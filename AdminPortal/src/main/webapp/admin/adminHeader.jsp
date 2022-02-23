@@ -56,8 +56,10 @@
 					
 				<li class="nav-item"><a class="nav-link"
 					href="assignClassesAndTeacherView.jsp">AssignAction-ForClasses</a></li>
-					
-
+				
+				<li class="nav-item"><a class="nav-link"
+					href="viewAssignedClasses.jsp">View-AssignedClasses</a></li>	
+				
 				<li class="nav-item"><a class="nav-link"
 					href="../logout.jsp">Logout</a></li>
 
