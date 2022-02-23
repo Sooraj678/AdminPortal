@@ -26,7 +26,7 @@
        				 
   %>
 <div class="container">
-<form action="" method="post">
+<form action="<%=LAAPView.AssignStudentCtl%>" method="post">
 <label>   
 			<b>Student Name is:</b>
 </label> 
@@ -75,7 +75,7 @@
 		<label>   
 			<b>Available Class For Registered Course is:</b>
 		</label>     
-			<select id="course" name="course">  
+			<select id="availableCourse" name="availableCourse">  
 				<option value="<%=rs1.getString(3)%>"><%=rs1.getString(3)%> </option>    
 			</select>  
 	</div>
@@ -97,7 +97,7 @@ value="<%=rs1.getString(2)%>" required />
 <%
        		
 		String idTeacher = request.getParameter("idTeacher");
-		System.out.println("Coming ID is:"+idStudent);
+		System.out.println("Coming ID is:"+idTeacher);
 		try{
        			
        			Connection con = DbConnectionProvider.getCon();
@@ -116,6 +116,7 @@ value="<%=rs2.getString(2)%>" required />
 <label><b>Teacher's Specialized Knowledge in Subject is: </b></label> <br>   
 <input type="text" name="specialSubject" placeholder="Enter Teacher's Specialized Subject....!!!" 
 value="<%=rs2.getString(4)%>" required />
+
  	<div>  
 		<label>   
 			<b>Teacher's Qualification is:</b>
@@ -125,6 +126,9 @@ value="<%=rs2.getString(4)%>" required />
 			</select>  
 	</div>
 
+<label><b>Schedule of Class is: </b></label> <br>   
+<input type="text" name="classSchedule" placeholder="Enter Schedule of Class with time, date and hours....!!!" 
+required />
 
 <button type="submit" class="registerbtn">AssignTeacher-Submit</button>
 </form>

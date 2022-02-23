@@ -24,6 +24,9 @@ public interface LAAPView {
 	public String DeleteClassCtl =App_CONTEXT+"/DeleteClassCtl";
 	
 	
+	public String AssignStudentCtl =App_CONTEXT+"/AssignStudentCtl";
+	
+	
 	
 	
 	

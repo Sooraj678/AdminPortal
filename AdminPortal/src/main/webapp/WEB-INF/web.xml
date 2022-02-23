@@ -94,6 +94,12 @@
   	<description></description>
   	<servlet-class>adminportal.controller.DeleteClassCtl</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>AssignClassesCtl</servlet-name>
+  	<display-name>AssignClassesCtl</display-name>
+  	<description></description>
+  	<servlet-class>adminportal.controller.AssignClassesCtl</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>UsersRegistrationAction</servlet-name>
   	<url-pattern>/UsersRegistrationAction</url-pattern>
@@ -153,5 +159,9 @@
   <servlet-mapping>
   	<servlet-name>DeleteClassCtl</servlet-name>
   	<url-pattern>/DeleteClassCtl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AssignClassesCtl</servlet-name>
+  	<url-pattern>/AssignClassesCtl</url-pattern>
   </servlet-mapping>
 </web-app>
