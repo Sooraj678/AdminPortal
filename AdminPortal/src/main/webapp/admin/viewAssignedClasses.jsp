@@ -15,7 +15,58 @@
 </head>
 <%@ include file="../admin/adminHeader.jsp"%>
 <body>
+<%
+		String msg = request.getParameter("msg");
+		if ("deleteOperationDone".equals(msg)) {
+%>
+	<h1 style="color:blue;">Assigned Student record got deleted Successfully: For a Assigned Class...!!!  </h1>
+	<%
+								}
+	%>
+	
+	<%
+	if ("deleteOperationNotDone".equals(msg)) {
+	%>
+	<h1 style="color:red;">Assigned Student record not deleted Successfully, Got some Problem: Please try again...!!!! </h1>
+	<%
+								}
+	%>
+	
+	<%
 
+		if ("deleteOperationDoneForClasses".equals(msg)) {
+	%>
+	<h1 style="color:blue;">Assigned Classes and Subject records got deleted Successfully: For a Assigned Class...!!!  </h1>
+	<%
+								}
+	%>
+	
+	<%
+	if ("deleteOperationNotDoneForClasses".equals(msg)) {
+	%>
+	<h1 style="color:red;">Assigned Classes and Subject record not deleted Successfully, Got some Problem: Please try again...!!!! </h1>
+	<%
+								}
+	%>
+	
+	<%
+
+		if ("deleteOperationDoneForTeacher".equals(msg)) {
+	%>
+	<h1 style="color:blue;">Assigned Teacher and Class-Schedule record got deleted Successfully: For a Assigned Teacher...!!!  </h1>
+	<%
+								}
+	%>
+	
+	<%
+	if ("deleteOperationNotDoneForTeacher".equals(msg)) {
+	%>
+	<h1 style="color:red;">Assigned Teacher and Class-Schedule record not deleted Successfully, Got some Problem: Please try again...!!!! </h1>
+	<%
+								}
+	%>
+	
+	
 <table id="allRegisteredData">
 <div ><center><h3 style="color:green;"> <b>Student's List Details For Classes  is..!!!</b></h3></center> </div>
 		
@@ -24,7 +75,8 @@
 			<th scope="col">StudentName</th>
 			<th scope="col">Course-OfStudent</th>
 			<th scope="col">Email-OfStudent</th>
-			<th scope="col">PhoneNo-OfStudent</th> 		
+			<th scope="col">PhoneNo-OfStudent</th> 
+			<th scope="col">Delete-Record</th>		
 		</tr>
 		
 
@@ -44,6 +96,7 @@
 			<td><%=rs.getString(3)%></td>
 			<td><%=rs.getString(4)%></td>
 			<td><%=rs.getString(5)%></td>
+			<td><a href="<%=LAAPView.DeleteAssignStudentCtl %>?idAssignStudent=<%=rs.getString(1)%>">DeleteRecord-Student-ForAssignedClass</a></td>
 		</tr>
 		<% 					}
        			
@@ -59,6 +112,7 @@
 			<th scope="col">idAssignClass</th>
 			<th scope="col">Available-Courses</th>
 			<th scope="col">AvailableSubjects-ForAvailableCourses</th>
+			<th scope="col">Delete-Record</th>
 		</tr>
 		<%
        		try{
@@ -74,7 +128,8 @@
 		<tr>
 			<td><%=rs.getString(1)%></td>
 			<td><%=rs.getString(2)%></td>
-			<td><%=rs.getString(3)%></td>	
+			<td><%=rs.getString(3)%></td>
+			<td><a href="<%=LAAPView.DeleteAssignClassesCtl %>?idAssignClass=<%=rs.getString(1)%>">DeleteRecord-ForAssigned-ClassesAndSubjects</a></td>	
 		</tr>
 		<% 					}
        			
@@ -91,6 +146,7 @@
 			<th scope="col">Teacher's-Qualification</th>
 			<th scope="col">SpecializedSubject-OfTeacher</th>
 			<th scope="col">Schedule-OfClass</th>
+			<th scope="col">Delete-Record</th>
 		</tr>	
 		
 		<%	    try{
@@ -107,6 +163,7 @@
 			<td><%=rs1.getString(3)%></td>
 			<td><%=rs1.getString(4)%></td>
 			<td><%=rs1.getString(5)%></td>
+			<td><a href="<%=LAAPView.DeleteAssignTeacherCtl %>?idAssignTeacher=<%=rs1.getString(1)%>">DeleteRecord-ForAssigned-TeacherAndClassSchedule</a></td>
 			
 		</tr>
 		<% 					}

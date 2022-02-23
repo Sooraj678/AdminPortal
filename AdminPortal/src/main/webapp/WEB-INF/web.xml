@@ -112,6 +112,24 @@
   	<description></description>
   	<servlet-class>adminportal.controller.AssignTeacherCtl</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>DeleteAssignStudentCtl</servlet-name>
+  	<display-name>DeleteAssignStudentCtl</display-name>
+  	<description></description>
+  	<servlet-class>adminportal.controller.DeleteAssignStudentCtl</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DeleteAssignClassesCtl</servlet-name>
+  	<display-name>DeleteAssignClassesCtl</display-name>
+  	<description></description>
+  	<servlet-class>adminportal.controller.DeleteAssignClassesCtl</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DeleteAssignTeacherCtl</servlet-name>
+  	<display-name>DeleteAssignTeacherCtl</display-name>
+  	<description></description>
+  	<servlet-class>adminportal.controller.DeleteAssignTeacherCtl</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>UsersRegistrationAction</servlet-name>
   	<url-pattern>/UsersRegistrationAction</url-pattern>
@@ -183,5 +201,17 @@
   <servlet-mapping>
   	<servlet-name>AssignTeacherCtl</servlet-name>
   	<url-pattern>/AssignTeacherCtl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteAssignStudentCtl</servlet-name>
+  	<url-pattern>/DeleteAssignStudentCtl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteAssignClassesCtl</servlet-name>
+  	<url-pattern>/DeleteAssignClassesCtl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteAssignTeacherCtl</servlet-name>
+  	<url-pattern>/DeleteAssignTeacherCtl</url-pattern>
   </servlet-mapping>
 </web-app>
