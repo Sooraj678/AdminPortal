@@ -16,6 +16,61 @@
 <%@ include file="../admin/adminHeader.jsp"%>
 <body>
 
+<%
+		String msg = request.getParameter("msg");
+		if ("validStudent".equals(msg)) {
+%>
+	<h1 style="color:blue;">Student got Assigned Successfully: For a Class...!!!  </h1>
+	<%
+								}
+	%>
+	
+	<%
+	if ("invalidStudent".equals(msg)) {
+	%>
+	<h1 style="color:red;">Assigning Student For a Class got some Problem: Please try again...!!!! </h1>
+	<%
+								}
+	%>
+
+
+<%
+
+		if ("validClass".equals(msg)) {
+%>
+	<h1 style="color:blue;">Class got Assigned Successfully: For a Student and For a Teacher...!!!  </h1>
+	<%
+								}
+	%>
+	
+	<%
+	if ("invalidClass".equals(msg)) {
+	%>
+	<h1 style="color:red;">Assigning Class For a Student and Teacher got some Problem: Please try again...!!!! </h1>
+	<%
+								}
+	%>
+
+
+<%
+		
+		if ("validTeacher".equals(msg)) {
+%>
+	<h1 style="color:blue;">Teacher got Assigned Successfully: For a Class...!!!  </h1>
+	<%
+								}
+	%>
+	
+	<%
+	if ("invalidTeacher".equals(msg)) {
+	%>
+	<h1 style="color:red;">Assigning Teacher For a Class got some Problem: Please try again...!!!! </h1>
+	<%
+								}
+	%>
+
+
+
 <table id="allRegisteredData">
 <div ><center><h3 style="color:green;"> <b>Registered Students List is..!!!</b></h3></center> </div>
 		
@@ -64,7 +119,7 @@
 			<td><%=rs.getString(12)%></td>
 			<td><%=rs.getString(13)%></td>
 			<td><%=rs.getString(14)%></td>
-			<td><a href="assignClassesActionView.jsp?idStudent=<%=rs.getString(1)%>">AssignStudent-Action</a></td>
+			<td><a href="assignClassesActionView.jsp?idStudent=<%=rs.getString(1)%>">AssigningStudent-ForClass</a></td>
 		</tr>
 		<% 					}
        			
@@ -75,7 +130,7 @@
 
 </table>
 <table id="allRegisteredData">
-<div ><center><h3 style="color:red;"> <b>Available Classes List is..!!!</b></h3></center> </div>
+<div ><center><h3 style="color:red;"> <b>Available Classes and Subjects List is..!!!</b></h3></center> </div>
 		<tr>
 			<th scope="col">AvailableClassName</th>
 			<th scope="col">idSubject</th>
@@ -97,7 +152,7 @@
 			<td><%=rs.getString(3)%></td>
 			<td><%=rs.getString(1)%></td>
 			<td><%=rs.getString(2)%></td>
-			<td><a href="assignClassesActionView.jsp?idSubject=<%=rs.getString(1)%>">AssignClasses-Action</a></td>		
+			<td><a href="assignClassesActionView.jsp?idSubject=<%=rs.getString(1)%>">AssigningSubjects-ToStudent</a></td>		
 		</tr>
 		<% 					}
        			
@@ -129,7 +184,7 @@
 			<td><%=rs1.getString(2)%></td>
 			<td><%=rs1.getString(3)%></td>
 			<td><%=rs1.getString(4)%></td>
-			<td><a href="assignClassesActionView.jsp?idTeacher=<%=rs1.getString(1)%>">AssignTeacher-Action</a></td>
+			<td><a href="assignClassesActionView.jsp?idTeacher=<%=rs1.getString(1)%>">AssigningTeacher-ForClasses</a></td>
 			
 		</tr>
 		<% 					}

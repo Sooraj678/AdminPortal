@@ -70,7 +70,7 @@
        				 
   %>
 <div class="container">
-<form action="" method="post">
+<form action="<%=LAAPView.AssignClassCtl %>" method="post">
  	<div>  
 		<label>   
 			<b>Available Class For Registered Course is:</b>
@@ -107,7 +107,7 @@ value="<%=rs1.getString(2)%>" required />
        				 
   %>
 <div class="container">
-<form action="" method="post">
+<form action="<%=LAAPView.AssignTeacherCtl %>" method="post">
 
 <label><b>Teacher Name is:</b></label> <br>   
 <input type="text" name="teacherName" placeholder="Enter Teacher's Name....!!!" 

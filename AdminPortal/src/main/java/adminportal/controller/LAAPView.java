@@ -22,9 +22,10 @@ public interface LAAPView {
 	public String AddClassCtl =App_CONTEXT+"/AddClassCtl";
 	public String UpdateClassListCtl =App_CONTEXT+"/UpdateClassListCtl";
 	public String DeleteClassCtl =App_CONTEXT+"/DeleteClassCtl";
-	
-	
 	public String AssignStudentCtl =App_CONTEXT+"/AssignStudentCtl";
+	public String AssignClassCtl =App_CONTEXT+"/AssignClassCtl";
+	public String AssignTeacherCtl =App_CONTEXT+"/AssignTeacherCtl";
+
 	
 	
 	
