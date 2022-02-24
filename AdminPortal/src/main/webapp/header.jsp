@@ -52,10 +52,6 @@
 					href="contactUS.jsp">ContactUS</a></li>
 				<li class="nav-item"><a class="nav-link"
 					href="aboutUS.jsp">AboutUS</a></li>
-
-				<li class="nav-item"><a class="nav-link"
-					href="logout.jsp">Logout</a></li>
-
 			</ul>
 			
 		</div>
