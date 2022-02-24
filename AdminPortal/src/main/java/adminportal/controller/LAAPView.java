@@ -29,12 +29,7 @@ public interface LAAPView {
 	public String DeleteAssignClassesCtl =App_CONTEXT+"/DeleteAssignClassesCtl";
 	
 	public String DeleteAssignTeacherCtl =App_CONTEXT+"/DeleteAssignTeacherCtl";
-	
-	
-	
-	
-	
-	
-	
+	public String ContactUsCtl =App_CONTEXT+"/ContactUsCtl";
+		
 	
 }

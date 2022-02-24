@@ -130,6 +130,12 @@
   	<description></description>
   	<servlet-class>adminportal.controller.DeleteAssignTeacherCtl</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>ContactUsCtl</servlet-name>
+  	<display-name>ContactUsCtl</display-name>
+  	<description></description>
+  	<servlet-class>adminportal.controller.ContactUsCtl</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>UsersRegistrationAction</servlet-name>
   	<url-pattern>/UsersRegistrationAction</url-pattern>
@@ -213,5 +219,9 @@
   <servlet-mapping>
   	<servlet-name>DeleteAssignTeacherCtl</servlet-name>
   	<url-pattern>/DeleteAssignTeacherCtl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ContactUsCtl</servlet-name>
+  	<url-pattern>/ContactUsCtl</url-pattern>
   </servlet-mapping>
 </web-app>

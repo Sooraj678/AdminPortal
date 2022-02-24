@@ -1,4 +1,5 @@
 <!doctype html>
+<%@page import="adminportal.controller.LAAPView"%>
 <html lang="en">
 <head>
 <title>ContactUS-Page</title>
@@ -69,7 +70,7 @@
 <div id="form-message-success" class="mb-4">
 Your message was sent, thank you!
 </div>
-<form method="POST" id="contactForm" name="contactForm">
+<form action="<%=LAAPView.ContactUsCtl %>" method="post" id="contactForm" name="contactForm">
 <div class="row">
 <div class="col-md-12">
 <div class="form-group">

@@ -11,6 +11,27 @@ font-family: "Comic Sans MS", "Comic Sans", cursive;
 </head>
 <%@ include file="header.jsp"%>
 <body>
+
+<%
+	String msg = request.getParameter("msg");
+	if ("valid".equals(msg)) {
+%>
+	<h1 style="color:white;">We Got Your Query, We will get back to you very soon...! Your Query is Submitted
+	Successfully, to us .....!!! </h1>
+
+	<%
+							}
+	%>
+	
+<%
+	if ("invalid".equals(msg)) {
+%>
+	<h1 style="color:black;">While Submitting your Query, Got some error, Please try again...!</h1>
+
+	<%
+								}
+	%>
+
 	<div id="carouselExampleControls" class="carousel slide"
 		data-ride="carousel">
 		<div class="carousel-inner">
