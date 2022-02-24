@@ -50,6 +50,12 @@ public class AssignTeacherCtl extends HttpServlet {
 		
 		data.setScheduleOfClass((request.getParameter("classSchedule")));
 		
+		data.setStudentName((request.getParameter("studentName")));
+		
+		data.setStudentCourse((request.getParameter("courseOfStudent")));
+		
+		data.setSubjectForCourse((request.getParameter("subjectToAttend")));
+		
 		long flag = AssignTeacherModel.assignTeacherList(data);
 		if ( flag>0) {
 			System.out.println("Assign Teacher List for Students Classes is inseretd Successfully: into assignteacher Table");

@@ -133,6 +133,19 @@ value="<%=rs2.getString(4)%>" required />
 <input type="text" name="classSchedule" placeholder="Enter Schedule of Class with time, date and hours....!!!" 
 required />
 
+<label><b>Enter Student Name: </b></label> <br>   
+<input type="text" name="studentName" placeholder="Enter Name of student from registered student only....!!!" 
+required />
+
+<label><b>Enter Course of Student: </b></label> <br>   
+<input type="text" name="courseOfStudent" placeholder="Enter Course of Student....!!!" 
+required />
+
+<label><b>Enter Subject to attend for Course of Student: </b></label> <br>   
+<input type="text" name="subjectToAttend" placeholder="Enter Subject Name to attend a Class for Course of Student....!!!" 
+required />
+
+
 <button type="submit" class="registerbtn">AssignTeacher-Submit</button>
 </form>
 <% 						

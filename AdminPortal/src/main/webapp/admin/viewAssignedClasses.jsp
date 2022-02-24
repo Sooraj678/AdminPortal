@@ -148,6 +148,9 @@
 			<th scope="col">Teacher's-Qualification</th>
 			<th scope="col">SpecializedSubject-OfTeacher</th>
 			<th scope="col">Schedule-OfClass</th>
+			<th scope="col">Student-Name</th>
+			<th scope="col">CourseOf-Student</th>
+			<th scope="col">SubjectFor-Course</th>
 			<th scope="col">Delete-Record</th>
 		</tr>	
 		
@@ -165,6 +168,9 @@
 			<td><%=rs1.getString(3)%></td>
 			<td><%=rs1.getString(4)%></td>
 			<td><%=rs1.getString(5)%></td>
+			<td><%=rs1.getString(6)%></td>
+			<td><%=rs1.getString(7)%></td>
+			<td><%=rs1.getString(8)%></td>
 			<td><a href="<%=LAAPView.DeleteAssignTeacherCtl %>?idAssignTeacher=<%=rs1.getString(1)%>">DeleteRecord-ForAssigned-TeacherAndClassSchedule</a></td>
 			
 		</tr>

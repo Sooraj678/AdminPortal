@@ -31,7 +31,7 @@ public class AssignTeacherModel {
 	    int i = 0;
 	    try {
 	      Connection conn = DbConnectionProvider.getCon();
-	      PreparedStatement stmt = conn.prepareStatement("insert into assignteacher values(?,?,?,?,?)");
+	      PreparedStatement stmt = conn.prepareStatement("insert into assignteacher values(?,?,?,?,?,?,?,?)");
 	      
 	      stmt.setLong(1, nextPk());
 	      
@@ -39,6 +39,9 @@ public class AssignTeacherModel {
 	      stmt.setString(3, data.getTeacherQualification());
 	      stmt.setString(4, data.getSpecializedSubjectOfTeacher());
 	      stmt.setString(5, data.getScheduleOfClass());
+	      stmt.setString(6, data.getStudentName());
+	      stmt.setString(7, data.getStudentCourse());
+	      stmt.setString(8, data.getSubjectForCourse());
 	      i =     stmt.executeUpdate();
 	      
 	    } catch (Exception e) {
