@@ -11,6 +11,7 @@
 <body>
 <%
 		String msg = request.getParameter("msg");
+
 		if ("valid".equals(msg)) {
 	%>
 	<h1 style="color:green;">Successfully Logined: into Student Portal Page</h1>

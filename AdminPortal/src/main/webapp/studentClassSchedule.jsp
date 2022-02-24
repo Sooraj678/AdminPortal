@@ -14,51 +14,32 @@
 </head>
 <%@ include file="studentHeader.jsp"%>
 <body>
-<table id="allRegisteredData">
-<div ><center><h3 style="color:green;"> <b>Your Class Schedule is..!!!</b></h3></center> </div>
-		
-		<tr>
-			<th scope="col">YourName</th>
-			<th scope="col">YourCourse</th>
-			<th scope="col">YourSubject</th>
-			<th scope="col">Schedule-OfClass</th>
-			<th scope="col">Assigned-TeacherName</th> 
-			<th scope="col">Email-Teacher</th>
-			<th scope="col">Phone-Teacher</th>   
-		</tr>
-		
+<%
+	String msg = request.getParameter("msg");
+	if ("invalid".equals(msg)) {
+	%>
+	<h1 style="color:red;">Some thing Went Wrong! Please Try Again and give correct Input, It Does Not matched to Registered Course...! !</h1>
 
 	<%
-       		try{
-       			
-       			Connection con = DbConnectionProvider.getCon();
-       			Statement stmt = con.createStatement();
-       			ResultSet rs = stmt.executeQuery("select *from assignstudent");
-       			 while(rs.next()){
-       				 
-       %>
-       
-		<tr>
-			<td>1</td>
-			<td>2</td>
-			<td>3</td>
-			<td>4</td>
-			<td>5</td>
-			<td>6</td>
-			<td>7</td>
-		</tr>
-		<% 					}
-       			
-       			 }catch(Exception e){
-       				System.out.println(e); 
-       			 }  			 
-	 	%>	
+									}
+	%>
 
-</table>
+<form action="viewClassAssignment.jsp" method="get">
+<label><b>Enter your First Name to see your Class and Teacher Assignment:</b></label> <br>   
+<input type="text" name="firstName" placeholder="Enter your First Name :....!!!" 
+required />
+
+<label><b>Enter your Course Name to see your Class and Teacher Assignment:</b></label> <br>   
+<input type="text" name="course" placeholder="Enter your Course Name :....!!!" 
+required />
+
+<button type="submit" class="registerbtn">ShowYour-ClassAssignment</button>
+
 <div><center><h1> <b>Show Page</b> <a href="contactUS.jsp"> 
 <b>Contact-US </b> </a> </h1></center> </div>
 <div><center><h1> <b>Show Page</b> <a href="aboutUS.jsp"> 
 <b>About-US </b> </a> </h1></center> </div>
+</form>
 </body>
 <div style="margin-top: 120px">
     <%@ include file="../footer.jsp"%>

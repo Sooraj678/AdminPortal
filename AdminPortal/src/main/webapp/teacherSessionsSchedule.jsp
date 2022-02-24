@@ -14,52 +14,33 @@
 </head>
 <%@ include file="teacherHeader.jsp"%>
 <body>
-<table id="allRegisteredData">
-<div ><center><h3 style="color:green;"> <b>Your Sessions Schedule is......!!!</b></h3></center> </div>
-		
-		<tr>
-			<th scope="col">TeacherName</th>
-			<th scope="col">TeacherQualification</th>
-			<th scope="col">Teacher-SpecializedSubject</th>
-			<th scope="col">Schedule-OfClass</th>
-			<th scope="col">Assigned-StudentName</th> 
-			<th scope="col">Email-OfStudent</th>
-			<th scope="col">Phone-OfStudent</th>
-			   
-		</tr>
-		
+<body>
+<%
+	String msg = request.getParameter("msg");
+	if ("invalid".equals(msg)) {
+	%>
+	<h1 style="color:red;">Some thing Went Wrong! Please Try Again and Give correct Input, It Does Not matched to Registered Course...!</h1>
 
 	<%
-       		try{
-       			
-       			Connection con = DbConnectionProvider.getCon();
-       			Statement stmt = con.createStatement();
-       			ResultSet rs = stmt.executeQuery("select *from assignstudent");
-       			 while(rs.next()){
-       				 
-       %>
-       
-		<tr>
-			<td>1</td>
-			<td>2</td>
-			<td>3</td>
-			<td>4</td>
-			<td>5</td>
-			<td>6</td>
-			<td>7</td>
-		</tr>
-		<% 					}
-       			
-       			 }catch(Exception e){
-       				System.out.println(e); 
-       			 }  			 
-	 	%>	
+								}
+	%>
 
-</table>
+<form action="viewTeacherAssignment.jsp" method="get">
+<label><b>Enter your Name to see your Class Schedules:</b></label> <br>   
+<input type="text" name="teacherName" placeholder="Enter your Name :....!!!" 
+required />
+
+<label><b>Enter your Specialized Subject Name to see your Class Schedule:</b></label> <br>   
+<input type="text" name="specializedSubject" placeholder="Specialized Subject Name:....!!!" 
+required />
+
+<button type="submit" class="registerbtn">ShowYour-ClassSchedules</button>
+
 <div><center><h1> <b>Show Page</b> <a href="contactUS.jsp"> 
 <b>Contact-US </b> </a> </h1></center> </div>
 <div><center><h1> <b>Show Page</b> <a href="aboutUS.jsp"> 
 <b>About-US </b> </a> </h1></center> </div>
+</form>
 </body>
 <div style="margin-top: 120px">
     <%@ include file="../footer.jsp"%>
