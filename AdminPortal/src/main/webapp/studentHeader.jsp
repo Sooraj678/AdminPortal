@@ -43,7 +43,7 @@
 				</a></li>
 				
 				<li class="nav-item"><a class="nav-link"
-					href="">View-YourSchedule</a></li>
+					href="studentClassSchedule.jsp">ViewYour-ClassSchedule</a></li>
 				
 				<li class="nav-item"><a class="nav-link"
 					href="contactUS.jsp">ContactUS</a></li>
