@@ -46,6 +46,9 @@
 <br><label><b>Student Phone No:</b></label>    
 <input type="text" name="phoneNo" placeholder="Enter Phone of student....!!!" value="<%=rs.getString(8)%>" required />
 
+<br><label><b>Subject Available for Following Course: </b></label>    
+<input type="text" name="subject" placeholder="Enter subject name for following Selected Course....!!!" required />
+
 <button type="submit" class="registerbtn">AssignClasses-Submit</button>
 </form>
 <% 						

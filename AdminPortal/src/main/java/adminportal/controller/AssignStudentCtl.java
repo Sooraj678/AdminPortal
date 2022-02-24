@@ -42,6 +42,8 @@ public class AssignStudentCtl extends HttpServlet {
 		
 		data.setPhoneStudent((request.getParameter("phoneNo")));
 		
+		data.setSubjectForCourse((request.getParameter("subject")));
+		
 		long flag = AssignStudentModel.assignStudentList(data);
 		if ( flag>0) {
 			System.out.println("Assign Student's Class List for Students is inseretd Successfully: into assignstudent Table");

@@ -75,7 +75,8 @@
 			<th scope="col">StudentName</th>
 			<th scope="col">Course-OfStudent</th>
 			<th scope="col">Email-OfStudent</th>
-			<th scope="col">PhoneNo-OfStudent</th> 
+			<th scope="col">PhoneNo-OfStudent</th>
+			<th scope="col">Subject-ForCourse</th>  
 			<th scope="col">Delete-Record</th>		
 		</tr>
 		
@@ -96,6 +97,7 @@
 			<td><%=rs.getString(3)%></td>
 			<td><%=rs.getString(4)%></td>
 			<td><%=rs.getString(5)%></td>
+			<td><%=rs.getString(6)%></td>
 			<td><a href="<%=LAAPView.DeleteAssignStudentCtl %>?idAssignStudent=<%=rs.getString(1)%>">DeleteRecord-Student-ForAssignedClass</a></td>
 		</tr>
 		<% 					}

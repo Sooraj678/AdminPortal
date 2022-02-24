@@ -39,14 +39,14 @@
 			<ul class="navbar-nav">
 				
 				<li class="nav-item active"><a class="nav-link"
-					href="adminHome.jsp">Home <span class="sr-only">(current)</span>
+					href="adminHome.jsp">Home-Page<span class="sr-only">(current)</span>
 				</a></li>
 
 				<li class="nav-item"><a class="nav-link"
-					href="viewRegisteredData.jsp">Get-RegisteredData</a></li>
+					href="viewRegisteredData.jsp">GetRegistered-Data</a></li>
 				
 				<li class="nav-item"><a class="nav-link"
-					href="MaterListForSubjectsView.jsp">SetUp-SubjectsForClasses</a></li>
+					href="MaterListForSubjectsView.jsp">SetUpSubjects-ForClasses</a></li>
 					
 				<li class="nav-item"><a class="nav-link"
 					href="MasterListForTeachersView.jsp">SetUp-TeachersList</a></li>
@@ -58,7 +58,13 @@
 					href="assignClassesAndTeacherView.jsp">AssignAction-ForClasses</a></li>
 				
 				<li class="nav-item"><a class="nav-link"
-					href="viewAssignedClasses.jsp">View-AssignedClasses</a></li>	
+					href="viewAssignedClasses.jsp">View-AssignedClasses</a></li>
+					
+				<li class="nav-item"><a class="nav-link"
+					href="viewMasterListStudent.jsp">View-MasterListStudent</a></li>
+					
+				<li class="nav-item"><a class="nav-link"
+					href="#">View-ClassReport</a></li>	
 				
 				<li class="nav-item"><a class="nav-link"
 					href="../logout.jsp">Logout</a></li>

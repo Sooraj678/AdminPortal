@@ -6,7 +6,14 @@ public class AssignStudentBeans {
 	String courseStudent;
 	String emailStudent;
 	String phoneStudent;
+	String subjectForCourse;
 	
+	public String getSubjectForCourse() {
+		return subjectForCourse;
+	}
+	public void setSubjectForCourse(String subjectForCourse) {
+		this.subjectForCourse = subjectForCourse;
+	}
 	public String getNameStudent() {
 		return nameStudent;
 	}
@@ -35,7 +42,7 @@ public class AssignStudentBeans {
 	@Override
 	public String toString() {
 		return "AssignStudentBeans [nameStudent=" + nameStudent + ", courseStudent=" + courseStudent + ", emailStudent="
-				+ emailStudent + ", phoneStudent=" + phoneStudent + "]";
+				+ emailStudent + ", phoneStudent=" + phoneStudent + ", subjectForCourse=" + subjectForCourse + "]";
 	}
 	
 	

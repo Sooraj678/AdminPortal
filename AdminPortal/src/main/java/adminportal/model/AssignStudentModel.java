@@ -31,14 +31,15 @@ public class AssignStudentModel {
 	    int i = 0;
 	    try {
 	      Connection conn = DbConnectionProvider.getCon();
-	      PreparedStatement stmt = conn.prepareStatement("insert into assignstudent values(?,?,?,?,?)");
+	      PreparedStatement stmt = conn.prepareStatement("insert into assignstudent values(?,?,?,?,?,?)");
 	      
 	      stmt.setLong(1, nextPk());
 	      
 	      stmt.setString(2, data.getNameStudent());
 	      stmt.setString(3, data.getCourseStudent());
 	      stmt.setString(4, data.getEmailStudent());
-	      stmt.setString(5, data.getPhoneStudent());      
+	      stmt.setString(5, data.getPhoneStudent());
+	      stmt.setString(6, data.getSubjectForCourse()); 
 	      i =     stmt.executeUpdate();
 	      
 	    } catch (Exception e) {
