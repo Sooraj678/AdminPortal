@@ -41,7 +41,10 @@
 				<li class="nav-item active"><a class="nav-link"
 					href="adminHome.jsp">Home-Page<span class="sr-only">(current)</span>
 				</a></li>
-
+				
+				<li class="nav-item"><a class="nav-link"
+					href="adminDashboardView.jsp">ViewAdminDashboard-ClassReport</a></li>
+				
 				<li class="nav-item"><a class="nav-link"
 					href="viewRegisteredData.jsp">GetRegistered-Data</a></li>
 				
@@ -63,9 +66,6 @@
 				<li class="nav-item"><a class="nav-link"
 					href="viewMasterListStudent.jsp">View-MasterListStudent</a></li>
 					
-				<li class="nav-item"><a class="nav-link"
-					href="#">View-ClassReport</a></li>	
-				
 				<li class="nav-item"><a class="nav-link"
 					href="../logout.jsp">Logout</a></li>
 
