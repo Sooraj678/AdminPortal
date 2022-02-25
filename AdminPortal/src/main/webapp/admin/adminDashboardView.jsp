@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>AdminDashBoard-Page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -22,112 +22,86 @@
       .row.content {height: auto;} 
     }
   </style>
+  <style>
+h1{
+background-color: #3377ff;
+color:#ffffff;
+border-radius: 25px;
+font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+</style>  
 </head>
+<%@ include file="adminHeader.jsp"%>
 <body>
-
-<nav class="navbar navbar-inverse visible-xs">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Logo</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Dashboard</a></li>
-        <li><a href="#">Age</a></li>
-        <li><a href="#">Gender</a></li>
-        <li><a href="#">Geo</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+<h1 style="padding: 100px;">Welcome Admin to the AdminDashBoard Portal...!!!</h1>
 
 <div class="container-fluid">
   <div class="row content">
     <div class="col-sm-3 sidenav hidden-xs">
-      <h2>Logo</h2>
       <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="#section1">Dashboard</a></li>
-        <li><a href="#section2">Age</a></li>
-        <li><a href="#section3">Gender</a></li>
-        <li><a href="#section3">Geo</a></li>
+        <li class="active"><a href="#section1">Admin-DashBoard</a></li>
+        <li><a href="adminAboutUS.jsp">AboutUS</a></li>
       </ul><br>
     </div>
     <br>
     
     <div class="col-sm-9">
       <div class="well">
-        <h4>Dashboard</h4>
-        <p>Some text..</p>
+        <h4>AdminDashboard</h4>
+        <p>Learners Academy is a school that has an online management system. The system keeps track of its classes, subjects, students, and teachers. 
+        It has a back-office application with a single administrator login.</p>
       </div>
       <div class="row">
-        <div class="col-sm-3">
+        <div class="col-sm-8">
           <div class="well">
-            <h4>Users</h4>
+            <h4>TotalUsers [RegisteredTeacher+Students]</h4>
             <p>1 Million</p> 
           </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-4">
           <div class="well">
-            <h4>Pages</h4>
+            <h4>Scheduled-Classes</h4>
             <p>100 Million</p> 
           </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-4">
           <div class="well">
-            <h4>Sessions</h4>
+            <h4>Scheduled-Sessions</h4>
             <p>10 Million</p> 
           </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-4">
           <div class="well">
-            <h4>Bounce</h4>
+            <h4>Total-Teachers</h4>
             <p>30%</p> 
           </div>
         </div>
-      </div>
-      <div class="row">
         <div class="col-sm-4">
           <div class="well">
-            <p>Text</p> 
-            <p>Text</p> 
-            <p>Text</p> 
+            <h4>Total-Students</h4>
+            <p>40%</p> 
           </div>
         </div>
-        <div class="col-sm-4">
+         <div class="col-sm-4">
           <div class="well">
-            <p>Text</p> 
-            <p>Text</p> 
-            <p>Text</p> 
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="well">
-            <p>Text</p> 
-            <p>Text</p> 
-            <p>Text</p> 
+            <h4>Available-SubjectsList</h4>
+            <p>50%</p> 
           </div>
         </div>
       </div>
+
       <div class="row">
         <div class="col-sm-8">
           <div class="well">
             <p>Text</p> 
           </div>
         </div>
-        <div class="col-sm-4">
-          <div class="well">
-            <p>Text</p> 
-          </div>
-        </div>
+ 
       </div>
     </div>
   </div>
 </div>
 
 </body>
+<%@ include file="../footer.jsp"%>
 </html>
