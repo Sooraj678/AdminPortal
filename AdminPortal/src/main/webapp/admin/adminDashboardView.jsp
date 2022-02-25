@@ -39,7 +39,7 @@ font-family: "Comic Sans MS", "Comic Sans", cursive;
   <div class="row content">
     <div class="col-sm-3 sidenav hidden-xs">
       <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="#section1">Admin-DashBoard</a></li>
+        <li class="active"><a href="adminHome.jsp">Admin-DashBoard</a></li>
         <li><a href="adminAboutUS.jsp">AboutUS</a></li>
       </ul><br>
     </div>
@@ -55,49 +55,36 @@ font-family: "Comic Sans MS", "Comic Sans", cursive;
         <div class="col-sm-8">
           <div class="well">
             <h4>TotalUsers [RegisteredTeacher+Students]</h4>
-            <p>1 Million</p> 
+            <p><a href="viewTotalUsers.jsp">View-TotalUsers</a></p> 
           </div>
         </div>
-        <div class="col-sm-4">
-          <div class="well">
-            <h4>Scheduled-Classes</h4>
-            <p>100 Million</p> 
-          </div>
-        </div>
+
         <div class="col-sm-4">
           <div class="well">
             <h4>Scheduled-Sessions</h4>
-            <p>10 Million</p> 
+           <p><a href="viewMasterListStudent.jsp">View-ScheduledSessions</a></p> 
           </div>
         </div>
         <div class="col-sm-4">
           <div class="well">
             <h4>Total-Teachers</h4>
-            <p>30%</p> 
+            <p><a href="viewTotalRegisteredTeacher.jsp">View-TotalTeacher</a></p> 
           </div>
         </div>
         <div class="col-sm-4">
           <div class="well">
             <h4>Total-Students</h4>
-            <p>40%</p> 
+            <p><a href="viewTotalRegisteredStudents.jsp">View-TotalStudents</a></p>
           </div>
         </div>
          <div class="col-sm-4">
           <div class="well">
             <h4>Available-SubjectsList</h4>
-            <p>50%</p> 
+             <p><a href="viewAvailableSubjectsList.jsp">View-AvailableSubjectsList</a></p> 
           </div>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-sm-8">
-          <div class="well">
-            <p>Text</p> 
-          </div>
-        </div>
- 
-      </div>
     </div>
   </div>
 </div>
