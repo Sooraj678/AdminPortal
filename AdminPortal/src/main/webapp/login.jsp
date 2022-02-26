@@ -47,8 +47,9 @@
 			</select> <br>
 			
 			<button type="submit">Login</button>     
-            <b>Forgot</b> <a href="#"> <b>Password?</b> </a>   
-            <b>New User</b>  <a href="register.jsp"><b>Please Register....!!</b></a>
+            <h1><b>Forgot</b> <a href="forgotPassword.jsp"> <b>Password?</b> </a></h1>   
+            <center><b>New Student</b>  <a href="register.jsp"><b>Please Register Here....!!</b></a> </center> 
+           <center><b>New Teacher</b>  <a href="teacherRegister.jsp"><b>Please Register Here....!!</b></a> </center> 
         </div>   
     </form>       
 </body> 

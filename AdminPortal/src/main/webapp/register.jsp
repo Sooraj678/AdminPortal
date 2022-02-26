@@ -88,7 +88,7 @@ Current Address :
     <input type="password" placeholder="Retype Password" name="psw-repeat" required> 
 
 <label>   
-<b>Select Your question for Password Reset :<b>  
+<b>Select Your question for Password Reset :</b>  
 </label><br>
     
     <select name="securityQuestions" required>
@@ -96,8 +96,11 @@ Current Address :
 			<option value="What is the name of your first pet?">What is the name of your first pet?</option>
 			<option value="What elementary school did you attend?">What elementary school did you attend?</option>
 			<option value="What is the name of the town where you were born?">What is the name of the town where you were born?</option>
-	</select>
+	</select><br>
 	
+	<label>   
+			<b>Enter Your Answer for Security Questions:</b>  
+	</label>
 	<input type="text" name="answer" placeholder="Enter Your Answer" required>
      
     <button type="submit" class="registerbtn">Register</button>  

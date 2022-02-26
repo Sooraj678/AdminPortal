@@ -136,6 +136,12 @@
   	<description></description>
   	<servlet-class>adminportal.controller.ContactUsCtl</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>ForgotPasswordCtl</servlet-name>
+  	<display-name>ForgotPasswordCtl</display-name>
+  	<description></description>
+  	<servlet-class>adminportal.controller.ForgotPasswordCtl</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>UsersRegistrationAction</servlet-name>
   	<url-pattern>/UsersRegistrationAction</url-pattern>
@@ -223,5 +229,9 @@
   <servlet-mapping>
   	<servlet-name>ContactUsCtl</servlet-name>
   	<url-pattern>/ContactUsCtl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ForgotPasswordCtl</servlet-name>
+  	<url-pattern>/ForgotPasswordCtl</url-pattern>
   </servlet-mapping>
 </web-app>
