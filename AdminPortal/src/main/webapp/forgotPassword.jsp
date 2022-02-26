@@ -58,7 +58,6 @@
 				<option value="role">Login-AS --------------------------------------------------------!!!</option>
 					<option value="Teacher">Teacher</option>
 					<option value="Student">Student</option>
-					<option value="Admin">Admin</option>
 			</select> <br>
 	<label> <b>Please SET Your New Password: </b></label>   
             <input type="password" placeholder="Enter New Password....!!!" name="newPassword" required>		
