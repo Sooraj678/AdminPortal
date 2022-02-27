@@ -60,7 +60,9 @@
 					<option value="Student">Student</option>
 			</select> <br>
 	<label> <b>Please SET Your New Password: </b></label>   
-            <input type="password" placeholder="Enter New Password....!!!" name="newPassword" required>		
+            <input type="password" placeholder="Enter New Password....!!!" name="newPassword" required>	
+     <label> <b>Please ReType Your New Password: </b></label>   
+            <input type="password" placeholder="Retype New Password....!!!" name="retypePassword" required>			
 			<button type="submit">Update-YourPassword</button>     
            
            <center> <h2> <b>GoTo...!!</b> <a href="login.jsp"> <b>Login Page.....!!!                     

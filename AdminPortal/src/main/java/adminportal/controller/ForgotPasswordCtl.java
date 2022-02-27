@@ -36,8 +36,8 @@ public class ForgotPasswordCtl extends HttpServlet {
 		String securityQuestions = request.getParameter("securityQuestions");
 		String answer = request.getParameter("answer");
 		String loginRole = request.getParameter("loginRole");
-		String newPassword = request.getParameter("newPassword");
-
+		String newPassword = request.getParameter("newPassword"); 
+		String retypePassword = request.getParameter("retypePassword");
 		int check = 0;
 		try {
 			Connection con = DbConnectionProvider.getCon();
@@ -46,7 +46,7 @@ public class ForgotPasswordCtl extends HttpServlet {
 					+ mobileNumber + "' and securityQuestions='" + securityQuestions + "' and answer='" + answer + "' and loginRole='" + loginRole +"' ");
 			while (rs.next()) {
 				check = 1;
-				stmt.executeUpdate("update usersadminportal set password='" + newPassword + "' where email='" + email + "' ");
+				stmt.executeUpdate("update usersadminportal set password='" + newPassword + "',retypedPassword='"+retypePassword+"'where email='" + email + "' ");
 				response.sendRedirect("forgotPassword.jsp?msg=updated");
 			}
 			if (check == 0) {
